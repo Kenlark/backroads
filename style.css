@@ -397,5 +397,6 @@ body {
   .footer_copyright p {
     display: flex;
     justify-content: center;
+    text-transform: capitalize;
   }
 }
