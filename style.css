@@ -556,7 +556,7 @@ img {
   }
 
   footer {
-    height: 40vh;
+    height: 50vh;
     background-color: var(--clr-grey-1);
     padding-inline: 2rem;
   }
