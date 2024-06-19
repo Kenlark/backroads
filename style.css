@@ -172,6 +172,12 @@ img {
     overflow: hidden;
   }
 
+  .header_menu-line {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
   .line {
     width: 19px;
     border-radius: 3px;
