@@ -426,6 +426,13 @@ img {
     background-color: var(--clr-primary-7);
     border: none;
     font-size: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    color: var(--clr-primary-5);
+    background-color: var(--clr-grey-3);
+    transition: var(--transition);
   }
 
   .form_img {
