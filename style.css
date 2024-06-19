@@ -119,6 +119,12 @@ body {
     padding: 1rem;
   }
 
+  .flex_picture img {
+    display: block;
+    max-inline-size: 500px;
+    object-fit: cover;
+  }
+
   .flex_picture h2 {
     font-size: 2rem;
     padding: 4rem;
@@ -251,7 +257,9 @@ body {
   }
 
   .voyages_card img {
-    width: 425px;
+    display: block;
+    object-fit: cover;
+    max-inline-size: 425px;
     color: var(--clr-grey-5);
   }
 
@@ -353,7 +361,8 @@ body {
 
   .form_img img {
     display: block;
-    width: 475px;
+    max-inline-size: 475px;
+    object-fit: cover;
   }
 
   /** section 5 end */
