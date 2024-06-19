@@ -116,7 +116,10 @@ img {
 
   #section-1 {
     background-color: var(--clr-primary-5);
-    margin-block-end: 2rem;
+  }
+
+  #section-2 {
+    padding-block: 3rem;
   }
 
   .flex_link {
@@ -170,7 +173,7 @@ img {
 
   .flex_picture h2 {
     font-size: 2rem;
-    padding: 4rem;
+    margin-block-end: 4rem;
     text-transform: uppercase;
     letter-spacing: var(--spacing);
   }
@@ -261,9 +264,13 @@ img {
     padding: 1.25rem;
   }
 
+  #section-4 {
+    padding-block: 5rem;
+  }
+
   .voyages h2 {
     text-transform: uppercase;
-    padding: 4rem;
+    margin-block-end: 4rem;
     font-size: 2rem;
     text-align: center;
   }
@@ -336,14 +343,13 @@ img {
   .voyages_all {
     display: flex;
     justify-content: center;
-    margin-block-end: 5rem;
   }
 
   .voyages_all a {
     background-color: var(--clr-primary-5);
     text-decoration: none;
     color: var(--clr-white);
-    padding: 0.4rem 0.75rem;
+    padding: 0.7rem 1rem;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -451,5 +457,10 @@ img {
     text-align: center;
     letter-spacing: var(--spacing);
     font-size: 0.875rem;
+  }
+
+  .fa-map {
+    color: var(--clr-primary-5);
+    padding: 0.2rem;
   }
 }
