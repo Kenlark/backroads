@@ -155,6 +155,12 @@ img {
     text-transform: uppercase;
   }
 
+  .flex_link a:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-primary-5);
+    border: 2px solid white;
+  }
+
   .flex_picture {
     display: flex;
     flex-direction: column;
@@ -213,6 +219,11 @@ img {
   .flex_picture_description_link {
     margin-block-start: 2rem;
     padding-block-end: 5rem;
+  }
+
+  .flex_picture_description_link a:hover {
+    color: var(--clr-primary-1);
+    background-color: var(--clr-primary-8);
   }
 
   #section-3 {
@@ -281,12 +292,17 @@ img {
 
   .voyages_card {
     background: var(--clr-grey-10);
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     margin: auto;
     box-shadow: var(--dark-shadow);
     position: relative;
     margin-block-end: 2rem;
+  }
+
+  .voyages_card:hover {
+    transition: var(--transition);
+    transform: scale(1.04);
   }
 
   .voyages_card_date {
@@ -343,6 +359,11 @@ img {
   .voyages_all {
     display: flex;
     justify-content: center;
+  }
+
+  .voyages_all a:hover {
+    color: var(--clr-primary-1);
+    background-color: var(--clr-primary-8);
   }
 
   .voyages_all a {
@@ -431,6 +452,10 @@ img {
     width: 100%;
   }
 
+  .footer_flex a:hover {
+    color: var(--clr-primary-6);
+  }
+
   .footer_brands ul {
     display: flex;
     justify-content: center;
@@ -445,6 +470,7 @@ img {
   a {
     text-decoration: none;
     color: var(--clr-white);
+    transition: var(--transition);
   }
 
   .footer_copyright {
