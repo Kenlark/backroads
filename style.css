@@ -415,18 +415,24 @@ img {
 
   input[type="email"] {
     padding: 0.5rem;
-    margin-inline-start: 2rem;
+    margin-inline-start: 1.3rem;
     border: none;
     width: 70%;
+    font-size: 1rem;
+    font-family: "Lato";
   }
 
   input[type="submit"] {
     margin-inline-start: 1rem;
     padding: 0.5rem 0.75rem;
-    background-color: var(--clr-primary-7);
+    background-color: var(--clr-primary-8);
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    font-size: 1rem;
+    color: var(--clr-primary-1);
+    font-weight: 700;
+    font-family: "Lato";
   }
 
   input[type="submit"]:hover {
