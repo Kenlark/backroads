@@ -48,6 +48,43 @@ body {
   --fw-bold: 700;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex_picture img,
+.voyages_card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.voyages_card {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.voyages_card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header_nav,
+.flex_link,
+.flex_picture,
+.services_icons_text,
+.voyages_info,
+.form_img {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.header_nav {
+  padding: 1rem;
+}
+
 @media screen and (max-width: 576px) {
   nav {
     display: none;
@@ -60,12 +97,13 @@ body {
   .header_nav {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    min-width: 100%;
+    padding: 1rem;
+    max-width: 100%;
     background-color: var(--clr-white);
     box-shadow: var(--dark-shadow);
     position: fixed;
     z-index: 1;
+    overflow: hidden;
   }
 
   .line {
@@ -78,6 +116,7 @@ body {
 
   #section-1 {
     background-color: var(--clr-primary-5);
+    margin-block-end: 2rem;
   }
 
   .flex_link {
@@ -88,10 +127,11 @@ body {
     text-align: center;
     height: 100vh;
     padding: 2rem;
+    width: 100%;
   }
 
   .flex_link p {
-    width: 45ch;
+    max-width: 45ch;
     color: var(--clr-white);
     margin-block-end: 1.25rem;
   }
@@ -101,6 +141,7 @@ body {
     font-size: 3rem;
     color: var(--clr-white);
     margin-block-end: 1.25rem;
+    margin-inline: auto;
   }
 
   .flex_link a {
@@ -117,11 +158,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    width: 100%;
   }
 
   .flex_picture img {
     display: block;
-    max-inline-size: 500px;
+    max-inline-size: 100%;
+    height: auto;
     object-fit: cover;
   }
 
@@ -138,6 +181,7 @@ body {
 
   .flex_picture_description {
     padding: 2rem;
+    width: 100%;
   }
 
   .flex_picture_description h3 {
@@ -188,10 +232,6 @@ body {
     text-align: center;
   }
 
-  .services_description {
-    text-align: center;
-  }
-
   .services_description p {
     width: 30ch;
   }
@@ -201,15 +241,11 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-block-start: 2rem;
-  }
-
-  .services_icons_text {
-    flex: 1 0;
+    width: 100%;
   }
 
   .services_icons_text p {
     padding-block-start: 0.75rem;
-    /* width: 27ch; */
     text-align: center;
     font-size: var(--fs-sm);
     color: var(--clr-grey-5);
@@ -237,9 +273,9 @@ body {
 
   .voyages_card {
     background: var(--clr-grey-10);
-    inline-size: 90vw;
-    max-inline-size: 70rem;
-    margin-inline: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
     box-shadow: var(--dark-shadow);
     position: relative;
     margin-block-end: 2rem;
@@ -258,8 +294,9 @@ body {
 
   .voyages_card img {
     display: block;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
-    max-inline-size: 425px;
     color: var(--clr-grey-5);
   }
 
@@ -310,15 +347,13 @@ body {
     font-weight: 700;
   }
 
-  /** section 5 start */
-
   #section-5 {
     min-height: 100vh;
     background-color: var(--clr-primary-5);
   }
 
   .form_description {
-    margin-inline-start: 2rem;
+    width: 100%;
   }
 
   .form_description h3 {
@@ -339,12 +374,14 @@ body {
     padding-block-start: 1rem;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
   }
 
   input[type="email"] {
     padding: 0.5rem;
     margin-inline-start: 2rem;
     border: none;
+    width: 100%;
   }
 
   input[type="submit"] {
@@ -357,15 +394,15 @@ body {
 
   .form_img {
     margin-block-start: 5rem;
+    width: 100%;
   }
 
   .form_img img {
     display: block;
-    max-inline-size: 475px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
   }
-
-  /** section 5 end */
 
   footer {
     height: 40vh;
@@ -381,6 +418,7 @@ body {
     gap: 1rem;
     color: var(--clr-white);
     font-size: 1rem;
+    width: 100%;
   }
 
   .footer_brands ul {
@@ -391,6 +429,7 @@ body {
     color: var(--clr-primary-8);
     margin-block-start: 2.5rem;
     gap: 1rem;
+    width: 100%;
   }
 
   a {
@@ -401,6 +440,7 @@ body {
   .footer_copyright {
     margin-block-start: 2rem;
     color: var(--clr-white);
+    width: 100%;
   }
 
   .footer_copyright p {
