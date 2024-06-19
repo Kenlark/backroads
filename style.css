@@ -436,12 +436,25 @@ img {
   .form_img img {
     display: block;
     max-width: 100%;
-    height: auto;
     object-fit: cover;
   }
 
   .img-container {
     position: relative;
+  }
+
+  .img-container i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+  }
+
+  .img-container:hover i {
+    opacity: 1;
   }
 
   .img-container::after {
