@@ -39,7 +39,7 @@ body {
   --clr-white: #fff;
   --ff-primary: "Lato", sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.25rem;
+  --spacing: 0.05em;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -242,6 +242,7 @@ img {
     align-items: flex-start;
     margin-block-start: 2rem;
     width: 100%;
+    gap: 2rem;
   }
 
   .services_icons_text p {
@@ -354,6 +355,9 @@ img {
 
   .form_description {
     width: 100%;
+    inline-size: 90vw;
+    max-inline-size: 70rem;
+    margin-inline: auto;
   }
 
   .form_description h3 {
@@ -372,16 +376,15 @@ img {
 
   .form_email {
     padding-block-start: 1rem;
+    padding-inline-end: 2rem;
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
   }
 
   input[type="email"] {
     padding: 0.5rem;
     margin-inline-start: 2rem;
     border: none;
-    width: 100%;
+    width: 70%;
   }
 
   input[type="submit"] {
@@ -407,6 +410,7 @@ img {
   footer {
     height: 40vh;
     background-color: var(--clr-grey-1);
+    padding-inline: 2rem;
   }
 
   .footer_flex ul {
@@ -444,8 +448,8 @@ img {
   }
 
   .footer_copyright p {
-    display: flex;
-    justify-content: center;
-    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: var(--spacing);
+    font-size: 0.875rem;
   }
 }
