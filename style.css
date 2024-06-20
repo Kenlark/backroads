@@ -85,7 +85,7 @@ img {
   padding: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 891px) {
   .header_nav {
     display: flex;
     justify-content: center;
@@ -231,7 +231,7 @@ img {
     width: 34%;
     height: 51%;
     margin-block-end: 4rem;
-    margin-inline-end: 33rem;
+    margin-inline-end: 30rem;
     z-index: -1;
   }
 
@@ -242,6 +242,7 @@ img {
     font-size: 1rem;
     font-weight: var(--fw-regular);
     line-height: 1.5;
+    max-inline-size: 42ch;
   }
 
   .flex_picture_description a {
@@ -261,6 +262,188 @@ img {
   .flex_picture_description h3 {
     letter-spacing: var(--spacing);
     font-size: 1.75rem;
+  }
+
+  #section-3 {
+    height: 40vh;
+    background-color: var(--clr-grey-10);
+  }
+
+  .services_icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    max-inline-size: 72rem;
+  }
+
+  .services h2 {
+    text-transform: uppercase;
+    padding: 4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services_color {
+    color: var(--clr-primary-5);
+  }
+
+  .services_description {
+    text-align: center;
+  }
+
+  .services_description p {
+    width: 31ch;
+    line-height: 1.5;
+    font-size: 1rem !important ;
+  }
+
+  .services_description h4 {
+    text-align: left;
+    margin-block-start: -1rem;
+  }
+
+  .services_icons_text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-block-start: 2rem;
+    gap: 1rem;
+  }
+
+  .services_icons_text p {
+    padding-block-start: 0.75rem;
+    text-align: left;
+    font-size: var(--fs-sm);
+    color: var(--clr-grey-5);
+  }
+
+  .fa-socks,
+  .fa-wallet,
+  .fa-tree {
+    color: var(--clr-primary-1);
+  }
+
+  .services_icons_text_bcg {
+    background-color: var(--clr-primary-5);
+    padding: 1.25rem 1rem;
+  }
+
+  #section-4 {
+    margin: 0 auto;
+    max-inline-size: 73rem;
+    padding-block: 5rem;
+  }
+
+  .voyages_card_grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .voyages_kenya {
+    margin-left: auto;
+  }
+
+  .voyages h2 {
+    text-transform: uppercase;
+    margin-block-end: 4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .fa-map {
+    padding-inline-end: 0.2rem;
+  }
+
+  .voyages_color {
+    color: var(--clr-primary-5);
+  }
+
+  .voyages_card {
+    background: var(--clr-grey-10);
+    width: 30%;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: var(--dark-shadow);
+    position: relative;
+    margin-block-end: 2rem;
+  }
+
+  .voyages_card:hover {
+    transition: var(--transition);
+    transform: scale(1.02);
+  }
+
+  .voyages_card_date {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-block-start: 10.6rem;
+    background-color: var(--clr-primary-8);
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .voyages_card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    color: var(--clr-grey-5);
+  }
+
+  .voyages_info {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .voyages_info h4 {
+    font-size: 0.875rem;
+  }
+
+  .voyages_info_p {
+    margin-block-start: 1rem;
+    color: var(--clr-grey-5);
+  }
+
+  .voyages_info_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .voyages_info_flex p {
+    color: var(--clr-grey-7);
+  }
+
+  .voyages_info_price {
+    margin-block-start: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .voyages_info_price p {
+    color: var(--clr-primary-5);
+  }
+
+  .voyages_all {
+    display: flex;
+    justify-content: center;
+  }
+
+  .voyages_all a:hover {
+    color: var(--clr-primary-1);
+    background-color: var(--clr-primary-8);
+  }
+
+  .voyages_all a {
+    background-color: var(--clr-primary-5);
+    text-decoration: none;
+    color: var(--clr-white);
+    padding: 0.7rem 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }
 
@@ -459,7 +642,7 @@ img {
   }
 
   .fa-solid {
-    color: var(--clr-primary-2);
+    color: var(--clr-primary-1);
   }
 
   .services_icons_text_bcg {
